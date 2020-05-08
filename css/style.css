@@ -1,0 +1,338 @@
+
+header {
+
+	position: relative;
+
+	background-color: black;
+
+	height: 75vh;
+
+	min-height: 25rem;
+
+	width: 100%;
+
+	overflow: hidden;
+
+}
+
+header video {
+
+	position: absolute;
+
+	top: 50%;
+
+	left: 50%;
+
+	min-width: 100%;
+
+	min-height: 100%;
+
+	width: auto;
+
+	height: auto;
+
+	z-index: 0;
+
+	-ms-transform: translateX(-50%) translateY(-50%);
+
+	-moz-transform: translateX(-50%) translateY(-50%);
+
+	-webkit-transform: translateX(-50%) translateY(-50%);
+
+	transform: translateX(-50%) translateY(-50%);
+
+}
+
+header .container {
+
+	position: relative;
+
+	z-index: 2;
+
+}
+
+header .overlay {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	height: 100%;
+
+	width: 100%;
+
+	background-color: black;
+
+	opacity: 0.5;
+
+	z-index: 1;
+
+}
+
+.btn {
+
+	display: inline-block;
+
+	padding: 10px 30px;
+
+	background: var(--primary-color);
+
+	color: #fff;
+
+	border-radius: 5px;
+
+	border: solid #fff 1px;
+
+	margin-top: 25px;
+
+	opacity: 0.7;
+
+}
+
+.btn:hover {
+
+	transform: scale(0.98);
+
+}
+
+@media (pointer: coarse) and (hover: none) {
+
+	header {
+
+		background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+
+	}
+
+	header video {
+
+		display: none;
+
+	}
+
+}
+
+#about {
+
+	padding: 40px;
+
+	text-align: center;
+
+}
+
+#galery {
+
+	padding: 40px;
+
+	text-align: center;
+
+}
+
+#contact {
+
+	padding: 40px;
+
+	text-align: center;
+
+}
+
+#Test {
+
+	padding: 40px;
+
+	text-align: center;
+
+}
+
+body {
+
+	background: #333;
+
+	color: #fff;
+
+	line-height: 1.6;
+
+}
+
+.slider {
+
+	position: relative;
+
+	overflow: hidden;
+
+	height: 100vh;
+
+	width: 100vw;
+
+}
+
+.slide {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+	opacity: 0;
+
+	transition: opacity 0.4s ease-in-out;
+
+}
+
+.slide.current {
+
+	opacity: 1;
+
+}
+
+.slide .content {
+
+	position: absolute;
+
+	bottom: 70px;
+
+	left: -600px;
+
+	opacity: 0;
+
+	width: 600px;
+
+	background-color: rgba(255, 255, 255, 0.8);
+
+	color: #333;
+
+	padding: 35px;
+
+}
+
+.slide .content h1 {
+
+	margin-bottom: 10px;
+
+}
+
+.slide.current .content {
+
+	opacity: 1;
+
+	transform: translateX(600px);
+
+	transition: all 0.7s ease-in-out 0.3s;
+
+}
+
+.buttons button#next {
+
+	position: absolute;
+
+	top: 40%;
+
+	right: 15px;
+
+}
+
+.buttons button#prev {
+
+	position: absolute;
+
+	top: 40%;
+
+	left: 15px;
+
+}
+
+.buttons button {
+
+	border: 2px solid #fff;
+
+	background-color: transparent;
+
+	color: #fff;
+
+	cursor: pointer;
+
+	padding: 13px 15px;
+
+	border-radius: 50%;
+
+	outline: none;
+
+}
+
+.buttons button:hover {
+
+	background-color: #fff;
+
+	color: #333;
+
+}
+
+@media (max-width: 500px) {
+
+	.slide .content {
+
+		bottom: -300px;
+
+		left: 0;
+
+		width: 100%;
+
+	}
+
+	.slide.current .content {
+
+		transform: translateY(-300px);
+
+	}
+
+}
+
+/* Backgorund Images */
+
+.slide:first-child {
+
+	background: url('https://wallpapercave.com/wp/n15XqVi.jpg') no-repeat center top/cover;
+
+}
+
+.slide:nth-child(2) {
+
+	background: url('https://www.ecopetit.cat/wpic/mpic/33-333656_free-winter-nature-wallpapers-wallpaper-data-src-winter.jpg') no-repeat center top/cover;
+
+}
+
+.slide:nth-child(3) {
+
+	background: url('https://lh3.googleusercontent.com/proxy/uPaHhkvSoozZwNEdjyskhJDT8ewPKS2NNBxlr8BuU2RCoKxvfQ1lQGWxkxEz2jn2BgJJwj1KZpKCSwGTSAwb2AZJY5HA1k84LX4wyq-CiX8ouHpmcFA0eBpSx7tSHqlUPfI') no-repeat center top/cover;
+
+}
+
+.slide:nth-child(4) {
+
+	background: url('https://cdn.wallpapersafari.com/30/19/zqZYac.jpg') no-repeat center top/cover;
+
+}
+
+.slide:nth-child(5) {
+
+	background: url('https://lh3.googleusercontent.com/proxy/uPaHhkvSoozZwNEdjyskhJDT8ewPKS2NNBxlr8BuU2RCoKxvfQ1lQGWxkxEz2jn2BgJJwj1KZpKCSwGTSAwb2AZJY5HA1k84LX4wyq-CiX8ouHpmcFA0eBpSx7tSHqlUPfI') no-repeat center top/cover;
+
+}
+
+.slide:nth-child(6) {
+
+	background: url('https://lh3.googleusercontent.com/proxy/vI8lb-9doQixliKwnkK-VTMGL8T4C4jhnDRKanT-r-wfu9_zy-XEfvxkZRfMy1aEYkB69kDQvO9MiY_qCp_nUXb_EBLTBwug41XLt_aYjmVf0sYyUCow0vFll0xrtshWgTFlglSNjJfF0TXzUvnLnnI83QJ3DXpgCLm-wKIhy_6ohrQS0f8') no-repeat center center/cover;
+
+}
+
+.social a {
+
+	margin: 0 5px;
+
+}
